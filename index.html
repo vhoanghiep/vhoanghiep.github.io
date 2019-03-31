@@ -148,7 +148,7 @@ canonical: https://vhoanghiep.github.io
 
       <!-- posts carousel -->
       <section id="blog">
-        <div class="container">
+        <div class="container"  style="padding: 3px;">
           <div id="posts-carousel" class="owl-carousel">
            {% for post in site.posts %}
             <div class="blog-block blog block carousel-post">
@@ -157,7 +157,7 @@ canonical: https://vhoanghiep.github.io
              {% endif %}
               <h5>{{ post.title }}</h5>
               <p>{{ post.excerpt }}</p>
-              <a href="{{ BASE_PATH }}{{ post.url }}">Xem &emsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              <a href="{{ BASE_PATH }}{{ post.url }}">Xem thêm &emsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
             </div>
            {% endfor %}
           </div>
@@ -172,7 +172,7 @@ canonical: https://vhoanghiep.github.io
 
       <!-- tutorials carousel -->
       <section id="blog">
-        <div class="container">
+        <div class="container" style="padding: 3px;">
           <div id="posts-carousel" class="owl-carousel">
            {% for post in site.tutorials %}
             <div class="blog-block blog block carousel-post">
@@ -181,7 +181,7 @@ canonical: https://vhoanghiep.github.io
              {% endif %}
               <h5>{{ tutorial.title }}</h5>
               <p>{{ tutorial.excerpt }}</p>
-              <a href="{{ BASE_PATH }}{{ post.url }}">Xem &emsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              <a href="{{ BASE_PATH }}{{ post.url }}">Xem thêm &emsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
             </div>
            {% endfor %}
           </div>
