@@ -2,7 +2,7 @@
 layout: tutorials
 title: Tutorials
 group: navigation
-tags : [blog, posts, post]
+tags : [tutorials, tutorials, tutorial]
 author : Võ Hoàng Hiệp
 css:
 js:
@@ -12,14 +12,14 @@ canonical: https://vhoanghiep.github.io/tutorials
 {% include JB/setup %}
 
 
-{% for post in site.posts %}
+{% for post in site.tutorials %}
 	  <div class="blog-block post-content-area">
-	   {% if post.img %}
-            <img src="{{ BASE_PATH }}/assets/images/{{ post.img }}" alt="{{ post.title }} image">
+	   {% if tutorial.img %}
+            <img src="{{ BASE_PATH }}/assets/images/{{ tutorial.img }}" alt="{{ tutorial.title }} image">
 	   {% endif %}
             <div class="blog-post">
-              <h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
-	      <p>{{ post.excerpt }}</p>
+              <h3><a href="{{ BASE_PATH }}{{ tutorial.url }}">{{ tutorial.title }}</a></h3>
+	      <p>{{ tutorial.excerpt }}</p>
               <a class="btn btn-common" href="{{ BASE_PATH }}{{ post.url }}">Read More</a>
             </div>
           </div>
