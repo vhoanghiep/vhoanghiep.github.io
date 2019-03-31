@@ -1,17 +1,17 @@
 ---
-layout: post
+layout: tutorials
 category : docs
 tagline: "Example helium post in markdown and html classes"
 tags : [jekyll, code, markdown]
 img : markdown-samples.jpg
 img2 : 
-img3 : 
+img3 :
 author : Antonio Trento
-title2 : 
-title3 : 
-css: 
-js: 
-bgcolor: 
+title2 :
+title3 :
+css:
+js:
+bgcolor:
 keywords: html, css, markdown, jekyll, docs, jekyllthemes, theme
 canonical: https://fullit.github.io
 
@@ -123,7 +123,7 @@ This is \*\*not\*\* in bold.
 {:.sub-title}
 #### in HTML
 ```
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Po16lsLfpMk" 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Po16lsLfpMk"
 frameborder="0" allowfullscreen></iframe>
 ```
 ----
@@ -149,19 +149,19 @@ If are you looking to html version explore [Labels Alerts]({{ "/labels-alerts" |
 
 
 {:.massage-box .alert-success}
-**Test Message alert success** 
+**Test Message alert success**
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
 {:.massage-box .alert-info}
-**Test Message alert info** 
+**Test Message alert info**
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
 {:.massage-box .alert-danger}
-**Test Message alert danger** 
+**Test Message alert danger**
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
 {:.massage-box .alert-warning}
-**Test Message alert warning** 
+**Test Message alert warning**
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
 ----
@@ -171,19 +171,19 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
 ```
 {:.massage-box .alert-success}
-**Test Message alert success** 
+**Test Message alert success**
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
 {:.massage-box .alert-info}
-**Test Message alert info** 
+**Test Message alert info**
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
 {:.massage-box .alert-danger}
-**Test Message alert danger** 
+**Test Message alert danger**
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
 {:.massage-box .alert-warning}
-**Test Message alert warning** 
+**Test Message alert warning**
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 ```
 ----
@@ -206,7 +206,7 @@ Info
 {:.label .label-warning-filled}
 Warning
 
-{:.label .label-danger-filled} 
+{:.label .label-danger-filled}
 Danger
 
 ----
@@ -227,7 +227,7 @@ Info
 {:.label .label-warning-filled}
 Warning
 
-{:.label .label-danger-filled} 
+{:.label .label-danger-filled}
 Danger
 ```
 ----
@@ -257,7 +257,7 @@ vs
 When you compare the code for tables, the ability to add a class via markdown attributes makes a world of difference:
 
 
-Some | Basic | Table 
+Some | Basic | Table
 -----|-------|------
 a    | b     | c
 d    | e     | f
@@ -269,7 +269,7 @@ d    | e     | f
 
 ```
 {.table .table-striped}
-Some | Basic | Table 
+Some | Basic | Table
 -----|-------|------
 a    | b     | c
 d    | e     | f
@@ -307,28 +307,28 @@ d    | e     | f
 
 ## PART I.
 
-(Being a reprint from the reminiscences of John H. Watson, M.D., late of the Army 
+(Being a reprint from the reminiscences of John H. Watson, M.D., late of the Army
 Medical Department.)
 
 1.  ### Mr. Sherlock Holmes
 
-    In the year 1878 I took my degree of Doctor of Medicine of the 
-    University of London, and proceeded to Netley to go through 
-    the course prescribed for surgeons in the army. Having completed 
-    my studies there, I was duly attached to the Fifth Northumberland 
-    Fusiliers as Assistant Surgeon. The regiment was stationed in 
+    In the year 1878 I took my degree of Doctor of Medicine of the
+    University of London, and proceeded to Netley to go through
+    the course prescribed for surgeons in the army. Having completed
+    my studies there, I was duly attached to the Fifth Northumberland
+    Fusiliers as Assistant Surgeon. The regiment was stationed in
     India at the time, and before I could join it, the second [...]
 
-    The campaign brought honours and promotion to many, but for me 
-    it had nothing but misfortune and disaster. I was removed from my 
-    brigade and attached to the Berkshires, with whom I served at 
+    The campaign brought honours and promotion to many, but for me
+    it had nothing but misfortune and disaster. I was removed from my
+    brigade and attached to the Berkshires, with whom I served at
     the fatal battle of Maiwand. There I was struck on the [...]            {.randomClass}
 
 2.  ### More content
 
-    Worn with pain, and weak from the prolonged hardships which 
-    I had undergone, I was removed, with a great train of wounded 
-    sufferers, to the base hospital at Peshawar. Here I rallied, and had 
+    Worn with pain, and weak from the prolonged hardships which
+    I had undergone, I was removed, with a great train of wounded
+    sufferers, to the base hospital at Peshawar. Here I rallied, and had
     already improved so far as to be able to walk about the [...]
 p.s. I tend to agree on the adding classes/IDs to every possible element to be overkill.
 
@@ -343,28 +343,28 @@ p.s. I tend to agree on the adding classes/IDs to every possible element to be o
 
 ## PART I.
 
-(Being a reprint from the reminiscences of John H. Watson, M.D., late of the Army 
+(Being a reprint from the reminiscences of John H. Watson, M.D., late of the Army
 Medical Department.)
 
 1.  ### Mr. Sherlock Holmes
 
-    In the year 1878 I took my degree of Doctor of Medicine of the 
-    University of London, and proceeded to Netley to go through 
-    the course prescribed for surgeons in the army. Having completed 
-    my studies there, I was duly attached to the Fifth Northumberland 
-    Fusiliers as Assistant Surgeon. The regiment was stationed in 
+    In the year 1878 I took my degree of Doctor of Medicine of the
+    University of London, and proceeded to Netley to go through
+    the course prescribed for surgeons in the army. Having completed
+    my studies there, I was duly attached to the Fifth Northumberland
+    Fusiliers as Assistant Surgeon. The regiment was stationed in
     India at the time, and before I could join it, the second [...]
 
-    The campaign brought honours and promotion to many, but for me 
-    it had nothing but misfortune and disaster. I was removed from my 
-    brigade and attached to the Berkshires, with whom I served at 
+    The campaign brought honours and promotion to many, but for me
+    it had nothing but misfortune and disaster. I was removed from my
+    brigade and attached to the Berkshires, with whom I served at
     the fatal battle of Maiwand. There I was struck on the [...]            {.randomClass}
 
 2.  ### More content
 
-    Worn with pain, and weak from the prolonged hardships which 
-    I had undergone, I was removed, with a great train of wounded 
-    sufferers, to the base hospital at Peshawar. Here I rallied, and had 
+    Worn with pain, and weak from the prolonged hardships which
+    I had undergone, I was removed, with a great train of wounded
+    sufferers, to the base hospital at Peshawar. Here I rallied, and had
     already improved so far as to be able to walk about the [...]
 p.s. I tend to agree on the adding classes/IDs to every possible element to be overkill.
 

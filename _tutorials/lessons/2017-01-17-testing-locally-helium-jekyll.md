@@ -1,17 +1,17 @@
 ---
-layout: post
+layout: tutorials
 category : lessons
 tagline: "How to test your Jekyll site locally"
 tags : [intro, beginner, jekyll, tutorial]
 img : helium-theme-post.jpg
-img-mobile : 
-img2 : 
-img3 : 
+img-mobile :
+img2 :
+img3 :
 author : Antonio Trento
-title2 : 
-title3 : 
-css: 
-js: 
+title2 :
+title3 :
+css:
+js:
 bgcolor: ff5a71
 keywords: helium, html, css, landing page, jekyll, ruby, web marketing, advertising
 canonical: https://heliumjk.github.io
@@ -85,7 +85,7 @@ preceded by `jekyll build`.
 To make jekyll automatically re-build your changes you can also add the `--watch` option:
 ``` HTML
     jekyll serve --watch
-    
+
 ```
 Now open your browser and go to <http://localhost:4000>.
 
@@ -98,7 +98,7 @@ Read the complete tutorial on <http://jekyllrb.com/docs/usage/>.
 ***
 #### #Code
 ``` HTML
-	
+
 	![Lost in space]({{ BASE_PATH }}/assets/img/big/lost_in_404_space.jpg){: .image-fluid }
 
 ```
@@ -110,7 +110,7 @@ Read the complete tutorial on <http://jekyllrb.com/docs/usage/>.
 ***
 #### #Code
 ``` HTML
-	
+
 	![Lost in space with description]({{ BASE_PATH }}/assets/img/big/universe1.jpg "Description of lost in space image"){: .image-fluid }
 
 ```
