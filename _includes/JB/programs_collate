@@ -21,10 +21,10 @@ Usage:
   {% include custom/programs_collate %}
 {% else %}
   {% for post in programs_collate  %}
-    {% capture this_year %}{{ programs.date | date: "%Y" }}{% endcapture %}
-    {% capture this_month %}{{ programs.date | date: "%B" }}{% endcapture %}
-    {% capture next_year %}{{ programs.previous.date | date: "%Y" }}{% endcapture %}
-    {% capture next_month %}{{ programs.previous.date | date: "%B" }}{% endcapture %}
+    {% capture this_year %}{{ program.date | date: "%Y" }}{% endcapture %}
+    {% capture this_month %}{{ program.date | date: "%B" }}{% endcapture %}
+    {% capture next_year %}{{ program.previous.date | date: "%Y" }}{% endcapture %}
+    {% capture next_month %}{{ program.previous.date | date: "%B" }}{% endcapture %}
 
     {% if forloop.first %}
       <h2>{{this_year}}</h2>
@@ -32,7 +32,7 @@ Usage:
       <ul>
     {% endif %}
 
-    <li><span>{{ programs.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ programs.url }}">{{ programs.title }}</a></li>
+    <li><span>{{ program.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ program.url }}">{{ program.title }}</a></li>
 
     {% if forloop.last %}
       </ul>
