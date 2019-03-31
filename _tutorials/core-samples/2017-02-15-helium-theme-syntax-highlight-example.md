@@ -1,5 +1,5 @@
 ---
-layout: tutorials
+layout: tutorial
 category : lessons
 tagline: "Example how post on Jekyll Helium"
 tags : [jekyll, code]

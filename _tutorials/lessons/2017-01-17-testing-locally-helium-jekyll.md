@@ -1,5 +1,5 @@
 ---
-layout: tutorials
+layout: tutorial
 category : lessons
 tagline: "How to test your Jekyll site locally"
 tags : [intro, beginner, jekyll, tutorial]

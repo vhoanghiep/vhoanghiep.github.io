@@ -1,5 +1,5 @@
 ---
-layout: tutorials
+layout: tutorial
 category : lessons
 tagline: "Hello world post on helium jekyll"
 tags : [intro, beginner, jekyll, tutorial]

@@ -1,5 +1,5 @@
 ---
-layout: tutorials
+layout: tutorial
 category : lessons
 tagline: "Using heliumjk.github.io"
 tags : [bootstrap 4, web desing, jekyll]

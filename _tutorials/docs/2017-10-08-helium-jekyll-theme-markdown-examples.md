@@ -1,10 +1,10 @@
 ---
-layout: tutorials
+layout: tutorial
 category : docs
 tagline: "Example helium post in markdown and html classes"
 tags : [jekyll, code, markdown]
 img : markdown-samples.jpg
-img2 : 
+img2 :
 img3 :
 author : Antonio Trento
 title2 :
