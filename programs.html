@@ -12,7 +12,7 @@ canonical: https://vhoanghiep.github.io/tutorials
 {% include JB/setup %}
 
 TEST
-{% for post in site.tutorial %}
+{% for tutorial in site.tutorials %}
 	  <div class="blog-block post-content-area">
 	   {% if tutorial.img %}
             <img src="{{ BASE_PATH }}/assets/images/{{ tutorial.img }}" alt="{{ tutorial.title }} image">
