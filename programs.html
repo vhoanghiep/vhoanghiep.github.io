@@ -12,15 +12,15 @@ canonical: https://vhoanghiep.github.io/tutorials
 {% include JB/setup %}
 
 
-{% for post in site.programs %}
+{% for post in site.tutorial %}
 	  <div class="blog-block post-content-area">
-	   {% if program.img %}
-            <img src="{{ BASE_PATH }}/assets/images/{{ program.img }}" alt="{{ program.title }} image">
+	   {% if tutorial.img %}
+            <img src="{{ BASE_PATH }}/assets/images/{{ tutorial.img }}" alt="{{ tutorial.title }} image">
 	   {% endif %}
             <div class="blog-post">
-              <h3><a href="{{ BASE_PATH }}{{ program.url }}">{{ program.title }}</a></h3>
-	      <p>{{ program.excerpt }}</p>
-              <a class="btn btn-common" href="{{ BASE_PATH }}{{ program.url }}">Read More</a>
+              <h3><a href="{{ BASE_PATH }}{{ tutorial.url }}">{{ tutorial.title }}</a></h3>
+	      <p>{{ tutorial.excerpt }}</p>
+              <a class="btn btn-common" href="{{ BASE_PATH }}{{ tutorial.url }}">Read More</a>
             </div>
           </div>
 	  <div class="mb-60"></div>
