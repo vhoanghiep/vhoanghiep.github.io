@@ -142,29 +142,8 @@ canonical: https://vhoanghiep.github.io
 	    </div>
             <div class="mb-60"></div>
 
-	<!-- HEADER -->
-      <div class="header-style-3">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <figure>
-                <img src="{{ BASE_PATH }}/assets/images/bg/hero-2.png" alt="">
-              </figure>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <div class="hero-content-v2">
-                <h3>100+ UI Components <strong>Ready for any web projects</strong></h3>
-                <a href="{{ BASE_PATH }}/components" class="btn btn-lg btn-default-filled animated fadeInUp">Explore All</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-	<!-- END HEADER -->
-            <div class="mb-60"></div>
-
       <div class="container">
-        <h4 class="sub-title space-left">Mobile scroll blog carousel</h4>
+        <h4 class="sub-title space-left">Blogs</h4>
       </div>
 
       <!-- posts carousel -->
@@ -178,7 +157,7 @@ canonical: https://vhoanghiep.github.io
              {% endif %}
               <h5>{{ post.title }}</h5>
               <p>{{ post.excerpt }}</p>
-              <a href="{{ BASE_PATH }}{{ post.url }}">Full Article <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              <a href="{{ BASE_PATH }}{{ post.url }}">Xem &emsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
             </div>
            {% endfor %}
           </div>
@@ -186,7 +165,32 @@ canonical: https://vhoanghiep.github.io
       </section>
 
       <div class="mb-60"></div>
+
       <div class="container">
+        <h4 class="sub-title space-left">Tutorials</h4>
+      </div>
+
+      <!-- tutorials carousel -->
+      <section id="blog">
+        <div class="container">
+          <div id="posts-carousel" class="owl-carousel">
+           {% for post in site.tutorials %}
+            <div class="blog-block blog block carousel-post">
+             {% if tutorial.img %}
+              <img src="{{ BASE_PATH }}/assets/images/{{ tutorial.img }}" alt="">
+             {% endif %}
+              <h5>{{ tutorial.title }}</h5>
+              <p>{{ tutorial.excerpt }}</p>
+              <a href="{{ BASE_PATH }}{{ post.url }}">Xem &emsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+           {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <div class="mb-60"></div>
+
+      <!-- <div class="container">
         <h4 class="sub-title space-left">Google AD Sense sample</h4>
       </div>
 	 <div class="container">
@@ -228,109 +232,7 @@ canonical: https://vhoanghiep.github.io
         </div>
       </div>
 
-      <div class="mb-60"></div>
-
-      <!-- Team Members 04 -->
-      <div class="container">
-            <div class="team-members-tow mtb-50">
-              <div class="sub-title">
-                <span>Team Members</span>
-              </div>
-              <div class="row">
-                <div class="col-sm-6 col-md-3">
-                  <!-- Team Item Starts -->
-                  <figure>
-                    <img src="{{ BASE_PATH }}/assets/images/team/team-05.jpg" alt="">
-                    <div class="image-overlay">
-                      <div class="overlay-text text-center">
-                        <div class="info-text">
-                          <strong>Melody Clark</strong>
-                          <span>UX Specialist</span>
-                        </div>
-                        <hr class="small-divider border-white">
-                        <ul class="social-icons">
-                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </figure>
-                  <!-- Team Item Ends -->
-                </div>
-                <div class="col-sm-6 col-md-3">
-                  <!-- Team Item Starts -->
-                  <figure>
-                    <img src="{{ BASE_PATH }}/assets/images/team/team-06.jpg" alt="">
-                    <div class="image-overlay">
-                      <div class="overlay-text text-center">
-                        <div class="info-text">
-                          <strong>Danny Burton</strong>
-                          <span>Senior Designer</span>
-                        </div>
-                        <hr class="small-divider border-white">
-                        <ul class="social-icons">
-                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </figure>
-                  <!-- Team Item Ends -->
-                </div>
-
-                <div class="col-sm-6 col-md-3">
-                  <!-- Team Item Starts -->
-                  <figure>
-                    <img src="{{ BASE_PATH }}/assets/images/team/team-07.jpg" alt="">
-                    <div class="image-overlay">
-                      <div class="overlay-text text-center">
-                        <div class="info-text">
-                          <strong>Elizabeth Jones</strong>
-                          <span>Art Director</span>
-                        </div>
-                        <hr class="small-divider border-white">
-                        <ul class="social-icons">
-                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </figure>
-                  <!-- Team Item Ends -->
-                </div>
-
-                <div class="col-sm-6 col-md-3">
-                  <!-- Team Item Starts -->
-                  <figure>
-                    <img src="{{ BASE_PATH }}/assets/images/team/team-08.jpg" alt="">
-                    <div class="image-overlay">
-                      <div class="overlay-text text-center">
-                        <div class="info-text">
-                          <strong>Danny Burton</strong>
-                          <span>Senior Designer</span>
-                        </div>
-                        <hr class="small-divider border-white">
-                        <ul class="social-icons">
-                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </figure>
-                  <!-- Team Item Ends -->
-                </div>
-
-              </div>
-            </div>
-      </div>
-      <!-- End Team Members 04 -->
-
-
-      <div class="mb-60"></div>
+      <div class="mb-60"></div> -->
 
       <!-- CONTACT FORM -->
 	<div class="container">
