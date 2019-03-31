@@ -11,7 +11,7 @@ Usage:
     Posts are displayed in reverse chronological order.
     For normal chronological order:
       1) Change the for loop to this:
-        => 'for post in site.tutorials reversed'
+        => 'for tutorial in site.tutorials reversed'
       2) Next make sure to change 'tutorial.previous.date' to:
         => 'tutorial.next.date'
 
@@ -20,7 +20,7 @@ Usage:
 {% if site.JB.tutorials_collate.provider == "custom" %}
   {% include custom/tutorials_collate %}
 {% else %}
-  {% for post in tutorial_collate  %}
+  {% for tutorial in tutorials_collate  %}
     {% capture this_year %}{{ tutorial.date | date: "%Y" }}{% endcapture %}
     {% capture this_month %}{{ tutorial.date | date: "%B" }}{% endcapture %}
     {% capture next_year %}{{ tutorial.previous.date | date: "%Y" }}{% endcapture %}
