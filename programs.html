@@ -1,0 +1,27 @@
+---
+layout: program
+title: Tutorials
+group: navigation
+tags : [Tutorials, programs, program]
+author : Võ Hoàng Hiệp
+css:
+js:
+keywords: bootstrap4, UI kit, jekyll
+canonical: https://vhoanghiep.github.io/tutorials
+---
+{% include JB/setup %}
+
+
+{% for post in site.programs %}
+	  <div class="blog-block post-content-area">
+	   {% if program.img %}
+            <img src="{{ BASE_PATH }}/assets/images/{{ program.img }}" alt="{{ program.title }} image">
+	   {% endif %}
+            <div class="blog-post">
+              <h3><a href="{{ BASE_PATH }}{{ program.url }}">{{ program.title }}</a></h3>
+	      <p>{{ program.excerpt }}</p>
+              <a class="btn btn-common" href="{{ BASE_PATH }}{{ program.url }}">Read More</a>
+            </div>
+          </div>
+	  <div class="mb-60"></div>
+{% endfor %}

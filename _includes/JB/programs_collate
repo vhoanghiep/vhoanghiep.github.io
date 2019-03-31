@@ -1,0 +1,55 @@
+{% comment %}<!--
+Collate_programs helper. Collated programs by year and month.
+Usage:
+  1) assign the 'programs_collate' variable to a valid array of programs.
+  2) include JB/programs_collate
+  example:
+    {% assign programs_collate = site.programs %}
+    {% include JB/programs_collate %}
+
+  Ordering:
+    Posts are displayed in reverse chronological order.
+    For normal chronological order:
+      1) Change the for loop to this:
+        => 'for post in site.programs reversed'
+      2) Next make sure to change 'programs.previous.date' to:
+        => 'programs.next.date'
+
+-->{% endcomment %}
+
+{% if site.JB.programs_collate.provider == "custom" %}
+  {% include custom/programs_collate %}
+{% else %}
+  {% for post in programs_collate  %}
+    {% capture this_year %}{{ programs.date | date: "%Y" }}{% endcapture %}
+    {% capture this_month %}{{ programs.date | date: "%B" }}{% endcapture %}
+    {% capture next_year %}{{ programs.previous.date | date: "%Y" }}{% endcapture %}
+    {% capture next_month %}{{ programs.previous.date | date: "%B" }}{% endcapture %}
+
+    {% if forloop.first %}
+      <h2>{{this_year}}</h2>
+      <h3>{{this_month}}</h3>
+      <ul>
+    {% endif %}
+
+    <li><span>{{ programs.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ programs.url }}">{{ programs.title }}</a></li>
+
+    {% if forloop.last %}
+      </ul>
+    {% else %}
+      {% if this_year != next_year %}
+        </ul>
+        <h2>{{next_year}}</h2>
+        <h3>{{next_month}}</h3>
+        <ul>
+      {% else %}
+        {% if this_month != next_month %}
+          </ul>
+          <h3>{{next_month}}</h3>
+          <ul>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% assign programs_collate = nil %}
