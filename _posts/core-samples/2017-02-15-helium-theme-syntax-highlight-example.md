@@ -1,16 +1,16 @@
 ---
-layout: post
+layout: tutorial
 category : lessons
 tagline: "Example how post on Jekyll Helium"
 tags : [jekyll, code]
 img : syntax-hightlight.jpg
-img2 : 
-img3 : 
+img2 :
+img3 :
 author : Antonio Trento
-title2 : 
-title3 : 
-css: 
-js: 
+title2 :
+title3 :
+css:
+js:
 bgcolor: ff5a71
 keywords: helium, html, css, landing page, jekyll, ruby, web marketing, advertising
 canonical: https://fullit.github.io
@@ -128,7 +128,7 @@ Another snippet rendered with the CSS code syntax:
         font-style: normal;
     }
 ```
-## Using snippet rendered with the HTML code syntax 
+## Using snippet rendered with the HTML code syntax
 
 ``` HTML
 
@@ -143,7 +143,7 @@ Another snippet rendered with the CSS code syntax:
 
             <br />
 
-                            
+
 
         </h2>
             <div class="intro-scroll-down">
