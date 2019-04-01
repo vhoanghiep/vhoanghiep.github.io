@@ -52,4 +52,4 @@ Usage:
     {% endif %}
   {% endfor %}
 {% endif %}
-{% assign tutorial_collate = nil %}
+{% assign tutorials_collate = nil %}
