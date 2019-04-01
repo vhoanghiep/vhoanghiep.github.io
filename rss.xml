@@ -24,5 +24,15 @@ title : RSS Feed
         </item>
 {% endfor %}
 
+{% for tutorial in site.tutorials %}
+        <item>
+                <title>{{ tutorial.title }}</title>
+                <description>{{ tutorial.content | xml_escape }}</description>
+                <link>{{ site.production_url }}{{ tutorial.url }}</link>
+                <guid>{{ site.production_url }}{{ tutorial.id }}</guid>
+                <pubDate>{{ tutorial.date | date_to_xmlschema }}</pubDate>
+        </item>
+{% endfor %}
+
 </channel>
 </rss>
